@@ -1,0 +1,15 @@
+<div id="cookie-policy-popup">
+    <p class="cookie-usage-details">
+        {% trans %}This site uses cookies and other tracking technologies to assist with navigation and your ability to provide feedback, analyse your use of our products and services, assist with our promotional and marketing efforts, and provide content from third parties{% endtrans %}.
+            <a href="{{ path('cookie-policy') }}">{% trans %}Cookie Policy{% endtrans %}</a>
+    </p>
+</div>
+<script type="text/javascript">
+    function cookiesConsented() {
+        return !!$.cookie('cookie-consent');
+    }
+
+    if (!cookiesConsented()) {
+        $('#cookie-policy-popup').slideUp();
+    }
+</script>
