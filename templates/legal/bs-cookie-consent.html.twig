@@ -1,0 +1,12 @@
+<div class="alert alert-dismissible text-center cookiealert" role="alert">
+    <div class="cookiealert-container">
+        <h5>My Company and Cookies</h5>
+        <p>{% trans %}This site uses cookies. By clicking ACCEPT or continuing to browse the site you are agreeing to our use of{% endtrans %} <a href="{{ path('cookie-policy') }}">{% trans %}cookies{% endtrans %}</a> <a href="http://cookiesandyou.com/" target="_blank">{% trans %}Learn more{% endtrans %}</a></p>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="{% trans %}Close{% endtrans %}">
+            {% trans %}Accept{% endtrans %}
+        </button>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+<script src="{{ asset('js/cookiealert.js') }}"></script>

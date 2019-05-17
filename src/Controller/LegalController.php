@@ -31,4 +31,34 @@ class LegalController extends AbstractController
             'controller_name' => 'LegalController',
         ]);
     }
+
+    /**
+     * @Route({
+     *     "en": "/terms",
+     *     "fr": "/modalites"
+     *   },
+     *   name="terms"
+     * )
+     */
+    public function terms()
+    {
+        return $this->render('legal/terms.html.twig', [
+            'controller_name' => 'LegalController',
+        ]);
+    }
+
+    /**
+     * @Route({
+     *     "en": "/privacy",
+     *     "fr": "/confidentialite"
+     *   },
+     *   name="privacy"
+     * )
+     */
+    public function privacy()
+    {
+        return $this->render('legal/privacy.html.twig', [
+            'controller_name' => 'LegalController',
+        ]);
+    }
 }
