@@ -1,0 +1,11 @@
+{# Language Switcher encased in an unordered list #}
+{% set routeParams = app.request.attributes.get('_route_params') %}
+
+<ul id="language-switcher">
+    {% for locale, label in locales %}
+        {% set routeParams = routeParams|merge({"_locale": locale}) %}
+        <li>
+            <a href="{{ path(app.request.attributes.get('_route'), routeParams) }}">{{ label|capitalize }}</a>
+        </li>
+    {% endfor %}
+</ul>

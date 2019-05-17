@@ -1,3 +1,12 @@
+# Translations config
+
+# In order to generate translation files in XLF, run :
+#       bin/console translation:update --dump-messages --force LOCALE
+# In order to generate translation files in YAML, run :
+#       bin/console translation:update --dump-messages --output-format="yaml" --force LOCALE
+#
+# For more information, refer to :
+#       https://symfony.com/doc/current/translation.html#translation-resource-locations
 framework:
     default_locale: '%locale%'
     translator:

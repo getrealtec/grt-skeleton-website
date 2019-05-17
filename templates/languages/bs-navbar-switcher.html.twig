@@ -1,0 +1,33 @@
+{# BootStrap Navbar Language Switcher#}
+{% set routeParams = app.request.attributes.get('_route_params') %}
+
+{% if locales is not iterable %}
+    <h1>no locales defined. Please make sure to define them in "config/services.yaml"</h1>
+{% elseif locales|length == 1 %}
+    {#  NO SWITCHER NEEDED. ONLY 1 LOCALE DEFINED  #}
+{% elseif locales|length == 2 %}
+    {#  2 LOCALES DEFINED, NO NEED FOR A DROPDOWN. A SIMPLE LINK TO THE OTHER LANGUAGE SUFFICE  #}
+    {% set break = false %}
+    {% for locale, label in locales if not break %}
+        {% if app.request.getLocale() != locale %}
+            {% set routeParams = routeParams|merge({"_locale": locale}) %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path(app.request.attributes.get('_route'), routeParams) }}">{{ label|capitalize }}</a>
+            </li>
+            {% set break = true %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {#  SET UP A DROPDOWN IN ORDER TO MAKE IT EASY TO SWITCH MULTIPLE LANGUAGES  #}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ attribute(locales, app.request.getLocale())|default(_default_locale) }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for locale, label in locales %}
+                {% set routeParams = routeParams|merge({"_locale": locale}) %}
+                <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), routeParams) }}">{{ label|capitalize }}</a>
+            {% endfor %}
+        </div>
+    </li>
+{% endif %}
