@@ -25,7 +25,9 @@
 
         <title>{{ site }} - {% block metatitle %}{% trans %}Real technology at the tip of your fingers{% endtrans %}{% endblock %}</title>
         {% block stylesheets %}
-            <link rel='stylesheet' id='bootstrap-css'  href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='css-font-awesome'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css' type='text/css' media='all' />
+            <link rel='stylesheet' id='css-bootstrap'  href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' type='text/css' media='all' />
+            <link rel="stylesheet" id="css-magnifique-popup"  href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" type="text/css" media="all" />
             <link rel='stylesheet' id='cookie-policy-css'  href='{{ asset('css/cookie-consent.css') }}' type='text/css' media='all' />
         {% endblock %}
     </head>
@@ -36,7 +38,7 @@
 
         {% block main %}
             {% block header %}
-                {% include 'header.html.twig' %}
+                {% include 'hero-header.html.twig' %}
             {% endblock %}
 
             {% block body %}
@@ -48,6 +50,10 @@
         {% endblock %}
 
         {% block javascripts %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         {% endblock %}
 
         {% include 'legal/bs-cookie-consent.html.twig' %}
