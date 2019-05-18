@@ -1,0 +1,14 @@
+{# SEE https://developers.facebook.com/docs/sharing/webmasters FOR MORE FB TAGS #}
+
+<meta property="og:title" content="{% block fb-title %}{% endblock %}"/>
+<meta property="og:locale" content="{% block fb-type %}{% endblock %}"/>
+<meta property="og:description" content="{% block fb-description %}{% endblock %}"/>
+<meta property="og:url" content="{% block fb-url %}{% endblock %}"/>
+<meta property="og:site_name" content="{% block fb-site-name %}{% endblock %}"/>
+
+{# IMAGE THAT FB DISPLAYS UPON SHARING - SHOULD BE SQUARE AND MINIMUM 600PX #}
+<meta property="og:image" content="{% block fb-img-url %}{% endblock %}"/>
+
+{# SEE http://ogp.me/#types FOR POSSIBLE TYPES #}
+<meta property="og:type" content="{% block fb-type %}website{% endblock %}"/>
+<meta property="fb:app_id" content="{% block fb-app-id %}{% endblock %}"/>

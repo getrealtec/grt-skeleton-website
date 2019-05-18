@@ -21,4 +21,18 @@ class DefaultController extends AbstractController
             'controller_name' => 'DefaultController',
         ]);
     }
+
+    /**
+     * @Route({
+     *     "en": "/",
+     *     "fr": "/accueil"
+     *   }, name="home"
+     * )
+     */
+    public function home()
+    {
+        return $this->render('default/home.html.twig', [
+            'controller_name' => 'DefaultController',
+        ]);
+    }
 }
