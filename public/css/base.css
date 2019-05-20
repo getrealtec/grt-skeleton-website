@@ -6,6 +6,9 @@
 }
 
 * {
+    font-family: "Open Sans", sans-serif;
+    font-stretch: 100%;
+    letter-spacing: -0.1px;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -76,7 +79,6 @@ nav#mainNav {
 
     #navbarResponsive .navbar-nav a.nav-link {
         padding: 0.7rem 1.7rem;
-        font-size: 0.9rem;
         border-bottom: 1px solid #f1f1f1;
     }
 
@@ -88,7 +90,6 @@ nav#mainNav {
         text-transform: uppercase;
         font-size: 0.9rem;
         font-weight: bold;
-        color: #333;
         letter-spacing: 0px;
     }
 
@@ -97,3 +98,23 @@ nav#mainNav {
     }
 }
 /** END NAVBAR CSS **/
+
+/** EXTERNAL BORDER - CTA DOES NOT WORK **/
+div.external-border {
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+div.external-border::before {
+    border-radius: .5rem;
+    content: '';
+    position: absolute;
+    top: -.5rem;
+    bottom: -.5rem;
+    left: -.5rem;
+    right: -.5rem;
+    border: .25rem solid rgba(255,255,255,.85);
+    z-index: 1;
+}
+/** END EXTERNAL BORDER **/
