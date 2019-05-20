@@ -1,0 +1,99 @@
+/** START HEADER PADDING **/
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: 5rem;
+    }
+}
+
+* {
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+@media (min-width: 300px) {
+    header.masthead {
+        padding-top: 6rem;
+    }
+}
+/** END HEADER PADDING **/
+
+/** NAVBAR CSS **/
+nav#mainNav {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#mainNav.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0, 0.7);
+}
+
+#mainNav.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0, 1);
+}
+
+@media (min-width: 992px) {
+    body.top nav#mainNav {
+        background-color: transparent;
+        box-shadow: none;
+        --webkit-box-shadow: none;
+    }
+
+    body.top #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, .7);
+    }
+
+    body.top #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    body.top #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (max-width: 992px) {
+    #navbarResponsive {
+        position: fixed;
+        overflow-x: hidden;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        min-width: 300px;
+        font-family: "Open Sans",sans-serif;
+        height: 100%;
+    }
+
+    #navbarResponsive.collapsing {
+        transition: height 0.05s ease;
+    }
+
+    #navbarResponsive ul {
+        margin: 0;
+    }
+
+    #navbarResponsive .navbar-nav a.nav-link {
+        padding: 0.7rem 1.7rem;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    #navbarResponsive .navbar-nav a.nav-link.close-menu {
+        background-color: #f5f5f5;
+    }
+
+    #navbarResponsive .navbar-nav a.nav-link.close-menu span {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #333;
+        letter-spacing: 0px;
+    }
+
+    #navbarResponsive .navbar-nav a.nav-link.close-menu span {
+        margin-left: 1rem;
+    }
+}
+/** END NAVBAR CSS **/

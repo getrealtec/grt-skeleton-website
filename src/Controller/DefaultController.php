@@ -25,7 +25,8 @@ class DefaultController extends AbstractController
     /**
      * @Route({
      *     "en": "/",
-     *     "fr": "/accueil"
+     *     "fr": "/accueil",
+     *     "es": "/bienvenida"
      *   }, name="home"
      * )
      */

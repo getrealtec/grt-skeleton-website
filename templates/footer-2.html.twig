@@ -1,0 +1,61 @@
+<!-- Footer -->
+<footer class="py-5 bg-dark text-white">
+    <div class="container space-2">
+        <div class="row justify-content-md-between">
+            <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-4 mb-lg-0">
+                <h3 class="h6 mb-3">{% trans %}Services{% endtrans %}</h3>
+
+                <!-- List Group -->
+                <ul class="list-group list-group-flush list-group-transparent">
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="#TODO">{% trans %}TODOService 1{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="#TODO">{% trans %}TODOService 2{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="#TODO">{% trans %}TODOProduct 1{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="#TODO">{% trans %}TODOProduct 2{% endtrans %}</a>
+                </ul>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-4 mb-lg-0">
+                <h3 class="h6 mb-3">{% trans %}About Us{% endtrans %}</h3>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush  list-group-transparent">
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="{{ path('contact') }}">{% trans %}Contact Us{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="{{ path('career') }}">{% trans %}Careers{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="{{ path('terms') }}">{% trans %}Terms &amp; Conditions{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="{{ path('privacy') }}">{% trans %}Privacy &amp; Policy{% endtrans %}</a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" href="{{ path('cookies') }}">{% trans %}Cookie Policy{% endtrans %}</a>
+                </div>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 order-lg-6 mb-4 mb-lg-0">
+                <h3 class="h6  mb-3">{% trans %}Social{% endtrans %}</h3>
+
+                <!-- List -->
+                <div class="list-group list-group-horizontal list-group list-group-flush list-group-transparent">
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" target="_blank" href="#TODO">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" target="_blank" href="#TODO">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a class="list-group-item list-group-item-action bg-dark text-muted" target="_blank" href="#TODO">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+                <!-- End List -->
+            </div>
+
+            <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
+                <!-- Logo -->
+                <a class="d-inline-block my-4" href="{{ path('home') }}" aria-label="Space">
+                    <img src="{{ asset('img/logo.png') }}" alt="{% trans %}Logo{% endtrans %}" style="width: 100px; max-width: 100%;">
+                </a>
+                <!-- End Logo -->
+
+                <p class="small text-muted">{% trans %}Copyright &copy;{% endtrans %} {{ 'now'|date('Y') }} - {{ site }}</p>
+            </div>
+        </div>
+    </div>
+</footer>

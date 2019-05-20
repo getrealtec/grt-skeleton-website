@@ -1,61 +1,130 @@
 <!-- Footer -->
-<footer class="bg-dark py-5">
-    <div class="container space-2">
-        <div class="row justify-content-md-between">
-            <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-4 mb-lg-0">
-                <h3 class="h6 text-white mb-3">{% trans %}Services{% endtrans %}</h3>
+<footer class="page-footer font-small stylish-color-dark pt-4">
 
-                <!-- List Group -->
-                <div class="list-group list-group-flush list-group-transparent">
-                    <a class="list-group-item list-group-item-action" href="#{#TODO#}">{% trans %}{#TODO#}Service 1{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="#{#TODO#}">{% trans %}{#TODO#}Service 2{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="#{#TODO#}">{% trans %}{#TODO#}Product 1{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="#{#TODO#}">{% trans %}{#TODO#}Product 2{% endtrans %}</a>
-                </div>
-                <!-- End List Group -->
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">{% trans %}Footer Content{% endtrans %}</h5>
+                <p>{% trans %}Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit.{% endtrans %}</p>
+
             </div>
+            <!-- Grid column -->
 
-            <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-4 mb-lg-0">
-                <h3 class="h6 text-white mb-3">{% trans %}About Us{% endtrans %}</h3>
+            <hr class="clearfix w-100 d-md-none">
 
-                <!-- List Group -->
-                <div class="list-group list-group-flush list-group-transparent">
-                    <a class="list-group-item list-group-item-action" href="{{ path('contact') }}">{% trans %}Contact Us{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="{{ path('career') }}">{% trans %}Careers{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="{{ path('terms') }}">{% trans %}Terms &amp; Conditions{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="{{ path('privacy') }}">{% trans %}Privacy &amp; Policy{% endtrans %}</a>
-                    <a class="list-group-item list-group-item-action" href="{{ path('cookies') }}">{% trans %}Cookie Policy{% endtrans %}</a>
-                </div>
-                <!-- End List Group -->
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">{% trans %}Services{% endtrans %}</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#{#TODO#}">{% trans %}{#TODO#}Service 1{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="#{#TODO#}">{% trans %}{#TODO#}Service 2{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="#{#TODO#}">{% trans %}{#TODO#}Product 1{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="#{#TODO#}">{% trans %}{#TODO#}Product 2{% endtrans %}</a>
+                    </li>
+                </ul>
+
             </div>
+            <!-- Grid column -->
 
-            <div class="col-6 col-md-3 col-lg-2 order-lg-6 mb-4 mb-lg-0">
-                <h3 class="h6 text-white mb-3">{% trans %}Social{% endtrans %}</h3>
+            <hr class="clearfix w-100 d-md-none">
 
-                <!-- List -->
-                <div class="list-group list-group-horizontal list-group list-group-flush list-group-transparent">
-                    <a class="list-group-item list-group-item-action" target="_blank" href="#{#TODO#}">
-                        <i class="fab fa-facebook-square fa-2x"></i>
-                    </a>
-                    <a class="list-group-item list-group-item-action" target="_blank" href="#{#TODO#}">
-                        <i class="fab fa-twitter fa-2x"></i>
-                    </a>
-                    <a class="list-group-item list-group-item-action" target="_blank" href="#{#TODO#}">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                </div>
-                <!-- End List -->
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">{% trans %}About{% endtrans %}</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{{ path('contact') }}">{% trans %}Contact{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('career') }}">{% trans %}Career{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('terms') }}">{% trans %}Terms & Conditions{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('privacy') }}">{% trans %}Privacy Policy{% endtrans %}</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('cookies') }}">{% trans %}Cookie Policy{% endtrans %}</a>
+                    </li>
+                </ul>
+
             </div>
+            <!-- Grid column -->
 
-            <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
-                <!-- Logo -->
-                <a class="d-inline-block my-4" href="{{ path('home') }}" aria-label="Space">
-                    <img src="{{ asset('img/logo.png') }}" alt="{% trans %}Logo{% endtrans %}" style="width: 100px; max-width: 100%;">
-                </a>
-                <!-- End Logo -->
-
-                <p class="small text-muted">{% trans %}Copyright &copy;{% endtrans %} {{ 'now'|date('Y') }} - {{ site }}</p>
-            </div>
         </div>
+        <!-- Grid row -->
+
     </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Call to action -->
+{#    <ul class="list-unstyled list-inline text-center py-2">#}
+{#        <li class="list-inline-item">#}
+{#            <h5 class="mb-1">Register for free</h5>#}
+{#        </li>#}
+{#        <li class="list-inline-item">#}
+{#            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>#}
+{#        </li>#}
+{#    </ul>#}
+    <!-- Call to action -->
+
+{#    <hr>#}
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a class="btn-floating mx-1" href="{#TODO:FB-LINK#}">
+                <i class="fab fa-facebook-f"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating mx-1" href="{#TODO:TWITTER-LINK#}">
+                <i class="fab fa-twitter"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating mx-1" href="{#TODO:LINKEDIN-LINK#}">
+                <i class="fab fa-linkedin-in"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating mx-1" href="{#TODO:INSTAGRAM-LINK#}">
+                <i class="fab fa-instagram"> </i>
+            </a>
+        </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <p class="small text-muted">{% trans %}Copyright &copy;{% endtrans %} {{ 'now'|date('Y') }} - {{ site }}</p>
+    </div>
+    <!-- Copyright -->
+
 </footer>
+<!-- Footer -->

@@ -29,31 +29,35 @@
             <link rel='stylesheet' id='css-bootstrap'  href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' type='text/css' media='all' />
             <link rel="stylesheet" id="css-magnifique-popup"  href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" type="text/css" media="all" />
             <link rel='stylesheet' id='cookie-policy-css'  href='{{ asset('css/cookie-consent.css') }}' type='text/css' media='all' />
+            <link rel="stylesheet" id="css-base"  href="{{ asset('css/base.css') }}" type="text/css" media="all" />
         {% endblock %}
     </head>
-    <body>
+    <body class="top">
         {% block navbar %}
             {% include 'navbar.html.twig' %}
         {% endblock %}
 
-        {% block main %}
-            {% block header %}
-                {% include 'hero-header.html.twig' %}
-            {% endblock %}
+        <div id="main">
+            {% block main %}
+                {% block header %}
+                    {% include 'hero-header.html.twig' %}
+                {% endblock %}
 
-            {% block body %}
-            {% endblock %}
+                {% block body %}
+                {% endblock %}
 
-            {% block footer %}
-                {% include 'footer.html.twig' %}
+                {% block footer %}
+                    {% include 'footer.html.twig' %}
+                {% endblock %}
             {% endblock %}
-        {% endblock %}
+        </div>
 
         {% block javascripts %}
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+            <script type="text/javascript" src="{{ asset('js/base.js') }}"></script>
         {% endblock %}
 
         {% include 'legal/bs-cookie-consent.html.twig' %}
