@@ -118,3 +118,9 @@ div.external-border::before {
     z-index: 1;
 }
 /** END EXTERNAL BORDER **/
+
+/** HERO SECTION **/
+header.masthead {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bg-masthead.jpg");
+}
+/** END HERO SECTION **/
