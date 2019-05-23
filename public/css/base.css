@@ -101,6 +101,14 @@ nav#mainNav {
     #navbarResponsive .navbar-nav a.nav-link.close-menu span {
         margin-left: 1rem;
     }
+
+    body #nav-logo-light {
+        display: block!important;
+    }
+
+    body.top #nav-logo-dark {
+        display: none!important;
+    }
 }
 /** END NAVBAR CSS **/
 
