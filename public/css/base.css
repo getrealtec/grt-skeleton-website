@@ -29,6 +29,11 @@ nav#mainNav {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+#navbarResponsive .navbar-nav .nav-link {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
 #mainNav.navbar-light .navbar-nav .nav-link {
     color: rgba(0,0,0, 0.7);
 }
@@ -124,3 +129,20 @@ header.masthead {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bg-masthead.jpg");
 }
 /** END HERO SECTION **/
+
+body.top #nav-logo-light {
+    display: none;
+}
+
+body #nav-logo-light {
+    display: block;
+}
+
+body.top #nav-logo-dark {
+    display: block;
+}
+
+body #nav-logo-dark {
+    display: none;
+}
+
