@@ -75,15 +75,22 @@
         "symfony/polyfill-php56": "*"
     },
     "scripts": {
+        "scss": "node-sass assets/scss -o public/css --output-style compressed",
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "@scss"
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "post-create-project-cmd": [
+            "npm install -g node-sass",
+            "npm init"
+
         ]
     },
     "conflict": {
