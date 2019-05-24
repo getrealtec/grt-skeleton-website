@@ -117,6 +117,9 @@ div.external-border {
     -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     border-radius: 0.3rem;
+    position: relative;
+    padding: 3rem;
+    margin: .5rem;
 }
 
 div.external-border::before {
