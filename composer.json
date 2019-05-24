@@ -5,12 +5,19 @@
     "keywords": ["website", "sass", "bootstrap", "html", "css", "javascript", "complete", "responsive", "template"],
     "license": "MIT",
     "homepage": "https://getrealtec.com/our-work/skeleton-website",
-    "author": "GetRealTec Inc.",
-    "bugs": {
-        "url": "https://github.com/getrealtec/grt-skeleton-website/issues",
-        "email": "grt-skeleton-website-feedback@getrealtec.com"
+    "authors": [
+        {
+            "name": "David Tremblay",
+            "email": "david.tremblay@getrealtec.com",
+            "homepage": "https://getrealtec.com",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "support-skeleton-website@getrealtec.com",
+        "issues": "https://github.com/getrealtec/grt-skeleton-website/issues",
+        "source": "https://github.com/getrealtec/grt-skeleton-website"
     },
-    "version": "0.1",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
