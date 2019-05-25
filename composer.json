@@ -86,11 +86,6 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ],
-        "post-create-project-cmd": [
-            "npm install -g node-sass",
-            "npm init"
-
         ]
     },
     "conflict": {
